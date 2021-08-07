@@ -33,10 +33,10 @@ Student No. of member 2: 97101286
         %MEM: RSS to Physical memory ratio.
         COMMAND: the name of the process
            
-- [ ]  Getting started with memory segments
-    - [ ] `FILL HERE with screenshot of which command for ls`
-    - [ ]  `FILL HERE with screenshot for size`
-    - [ ]  `FILL HERE with segments not shown with size`
+- [x]  Getting started with memory segments
+    - [x] ![image](https://user-images.githubusercontent.com/45389577/128613170-83d6844f-3bc3-4c82-99d0-2af8e561886b.png)
+    - [x] ![image](https://user-images.githubusercontent.com/45389577/128613184-bc2246c0-c655-46cc-9753-b0a3895623f2.png)
+    - [x] Heap and Stack are not shown. Because they are related to the runtime.
     
 
 - [ ] Getting started with memory sharing
