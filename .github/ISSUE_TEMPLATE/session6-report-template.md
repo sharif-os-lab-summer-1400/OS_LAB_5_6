@@ -7,21 +7,21 @@ assignees: mhaghighat20
 
 ---
 
-Team Name: `[FILL HERE]`
+Team Name: 97110285-97101286
 
-Student Name of member 1: `[FILL HERE]`
-Student No. of member 1: `[FILL HERE]`
+Student Name of member 1: Mohammadreza Abdi
+Student No. of member 1: 97110285
 
-Student Name of member 2: `[FILL HERE]`
-Student No. of member 2: `[FILL HERE]`
+Student Name of member 2: Alireza Ilami
+Student No. of member 2: 97101286
 
-- [ ] Read Session Contents.
+- [x] Read Session Contents.
 
 ## Section 6.4
 
-- [ ] Using `malloc` and `free` in program
-    - [ ] `FILL HERE with screenshot of code`
-    - [ ] `FILL HERE with screenshot of execution`
+- [x] Using `malloc` and `free` in program
+    - [x] ![image](https://user-images.githubusercontent.com/45389577/128612418-359c9b0d-a2af-429c-b8a0-84a91e32e29b.png)
+    - [x] ![image](https://user-images.githubusercontent.com/45389577/128612407-50362ed1-b715-4e7a-801b-2b76775d598f.png)
 
     
 - [ ]  Using `ps`
