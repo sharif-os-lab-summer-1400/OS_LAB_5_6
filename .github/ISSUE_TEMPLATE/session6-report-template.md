@@ -39,10 +39,12 @@ Student No. of member 2: 97101286
     - [x] Heap and Stack are not shown. Because they are related to the runtime.
     
 
-- [ ] Getting started with memory sharing
-    1. [ ] `[FILL HERE with screenshot of lld for ls]`
-    1. [ ] `[FILL HERE with screenshot of lld for nano]`
-    1. [ ] `[FILL HERE with screenshot of lld for another program]`
+- [x] Getting started with memory sharing
+    1. [x] ![image](https://user-images.githubusercontent.com/45389577/128613248-aca12b4f-8b02-4734-8d55-03c589137751.png)
+    1. [x] ![image](https://user-images.githubusercontent.com/45389577/128613266-52c4ee67-c08c-420b-94a9-633ff6757cde.png)
+    1. [x] cat, mkdir, and rm:
+           ![image](https://user-images.githubusercontent.com/45389577/128613304-996db023-d47c-4ef3-b22d-2fd4155b296c.png)
+
 
 - [ ] Getting started with addresses
     1. [ ] `[FILL HERE with your description about etext]`
