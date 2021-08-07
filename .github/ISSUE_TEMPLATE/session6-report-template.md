@@ -24,10 +24,15 @@ Student No. of member 2: 97101286
     - [x] ![image](https://user-images.githubusercontent.com/45389577/128612407-50362ed1-b715-4e7a-801b-2b76775d598f.png)
 
     
-- [ ]  Using `ps`
-    - [ ] `FILL HERE with screenshot of command output`
-    - [ ] `FILL HERE with your descriptions (write in English or Persian)`
-
+- [x]  Using `ps`
+    - [x] ![image](https://user-images.githubusercontent.com/45389577/128612454-bf484bf1-d1ec-454a-8d4e-5490e2ef8c9e.png)
+    - [x] Columns:
+        User: Shows the user who runs this process.
+        VSZ: Virtual System Size. (Memory) including swap, and shared memories. This process has access to this memory size.
+        RSS: Resident Set Size. the amount of memory reserved for this process in the RAM. not including swap but contains shared memory as long as it is in RAM.
+        %MEM: RSS to Physical memory ratio.
+        COMMAND: the name of the process
+           
 - [ ]  Getting started with memory segments
     - [ ] `FILL HERE with screenshot of which command for ls`
     - [ ]  `FILL HERE with screenshot for size`
