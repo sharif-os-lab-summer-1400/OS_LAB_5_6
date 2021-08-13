@@ -112,7 +112,7 @@ Student No. of member 2: 97101286
     ها مستقل از طول عمر پردازه ها میباشد و همانند یک فایل بوده و با دستور 
     mkfifo
     میتوان آنها را تولید کرد.
-    بنابراین پردازه ها با خواندن و نوشتن در یک فایل، با یک دیگر ازتباط دو طرفه داشته باشند.
+    بنابراین پردازه ها با خواندن و نوشتن در یک فایل، با یک دیگر ارتباط دو طرفه داشته باشند.
     همچنین با استفاده از این نوع
     pipe
     ها میتوان دو پردازه که در دو سیستم عامل جداگانه هستند تحت شبکه به هم متصل کرد.
@@ -121,19 +121,81 @@ Student No. of member 2: 97101286
 
 ### Section 5.3.2
 
-- [ ] Describe the usecase of different signals:
-    1. [ ] `[FILL HERE with the description for SIGINT.]`
-    1. [ ] `[FILL HERE with the description for SIGHUP.]`
-    1. [ ] `[FILL HERE with the description for SIGSTP.]`
-    1. [ ] `[FILL HERE with the description for SIGCONT.]`
-    1. [ ] `[FILL HERE with the description for SIGKILL.]`
+- [x] Describe the usecase of different signals:
+    1. [x] `[FILL HERE with the description for SIGINT.]`
+    2. [x] `[FILL HERE with the description for SIGHUP.]`
+    3. [x] `[FILL HERE with the description for SIGSTP.]`
+    4. [x] `[FILL HERE with the description for SIGCONT.]`
+    5. [x] `[FILL HERE with the description for SIGKILL.]`
 
-- [ ] Describe SIGALRM
-    1. [ ] `[FILL HERE with your description.]`
+    <div dir="rtl">
+    
+    1. SIGINT:
+    هنگام وقفه توسط کیبورد تولید می شود و به پردازه پرتاب می شود.
+    (ctrl + c)
+    
+    2. SIGHUP:
+    هنگام بسته شدن ترمینال کنترل کننده یک پردازه تولید می شود و به آن پردازه پرتاب می شود.
+    
+    3. SIGSTOP:
+    هنگامی که یک پردازه در حال اجرا متوقف می شود تولید می شود.
+    
+    4. SIGCONT:
+    هنگام ادامه دادن یک پردازه متوقف شده ایجاد شده و پرتاب می شود.
+    
+    5. SIGKILL:
+    هنگام نابود شدن یک پردازه تولید شده و پرتاب می شود. 
+    </div>
 
-- [ ] Investigate the given code
-    1. [ ] `[FILL HERE with your description.]`
-    1. [ ] `[FILL HERE with screenshot of program execution]`
+- [x] Describe SIGALRM
+    1. [x] `[FILL HERE with your description.]`
+ 
+    <div dir="rtl">
+    
+    تابع
+    alarm
+    منجر به پرتاب شدن سیگنال 
+    SIGALRM
+    بعد از گذشت تعداد ثانیه هایی است که در ورودی این تابع داده شده است.
+    به صورت پیش فرض پردازه هنگام مواجه با سیگنال
+    SIGALRM
+    خاتمه میابد اما میتوان آن را مدیریت کرد.
+    هر پردازه تنها می تواند یکبار از این تابع استفاده کند و چندین بار استفاده از تابع 
+    alarm
+    منجر به
+    reset
+    شدن زمانبند ساعت پردازه خواهد شد.
+    (به اصطلاح 
+    alram
+    ها پشته نخواهند شد.)
+    </div>
+
+- [x] Investigate the given code
+    1. [x] `[FILL HERE with your description.]`
+    
+    <div dir="rtl">
+    
+    برنامه با توجه به خط
+    while(1)
+    در یک حلقه بینهایت میافتد، اما چون قبل از آن دستور
+    alarm(5)
+    جرا شده، بعد از گذشت 5 ثانیه برنامه متوقف شده و خاتمه میابد. بنابراین اولین
+    print
+    که قبل از 
+    while
+    بوده اجرا می شود ولی دومین 
+    print
+    که بعد از
+    while
+    میباشد، اجرا نخواهد شد و پردازه مستقیما توسط سیگنال
+    SIGALRM
+    متوقف خواهد شد.
+    </div>
+    
+    3. [x] `[FILL HERE with screenshot of program execution]`
+
+    ![image](https://user-images.githubusercontent.com/45341111/129383390-665ba6a9-ecbf-4995-b47e-9d6f1d52c02f.png)
+
 
 - [ ] Modify the given program by handling SIGALRM
     1. [ ] `[FILL HERE with your source code.]`
