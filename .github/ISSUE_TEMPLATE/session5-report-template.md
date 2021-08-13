@@ -180,11 +180,11 @@ Student No. of member 2: 97101286
     در یک حلقه بینهایت میافتد، اما چون قبل از آن دستور
     alarm(5)
     جرا شده، بعد از گذشت 5 ثانیه برنامه متوقف شده و خاتمه میابد. بنابراین اولین
-    print
+    printf
     که قبل از 
     while
     بوده اجرا می شود ولی دومین 
-    print
+    printf
     که بعد از
     while
     میباشد، اجرا نخواهد شد و پردازه مستقیما توسط سیگنال
@@ -197,8 +197,47 @@ Student No. of member 2: 97101286
     ![image](https://user-images.githubusercontent.com/45341111/129383390-665ba6a9-ecbf-4995-b47e-9d6f1d52c02f.png)
 
 
-- [ ] Modify the given program by handling SIGALRM
-    1. [ ] `[FILL HERE with your source code.]`
+- [x] Modify the given program by handling SIGALRM
+    1. [x] `[FILL HERE with your source code.]`
 
-- [ ] Write a program that handles Ctrl + C
-    1. [ ] `[FILL HERE with your source code.]`
+    ```c
+    #include <stdio.h>
+    #include <unistd.h>
+    #include <signal.h>
+
+    void handler(){
+        return;
+    }
+
+    int main() {
+        signal(SIGALRM, handler);
+        alarm (5);
+        printf ("Looping forever . . . \n");
+        pause();
+        printf("This line should never be executed\n");
+        return 0;
+    }
+    ```
+
+- [x] Write a program that handles Ctrl + C
+    1. [x] `[FILL HERE with your source code.]`
+
+    ```c
+    #include <stdio.h>
+    #include <unistd.h>
+    #include <signal.h>
+
+    void handler(){
+        return;
+    }
+
+    int main() {
+        signal(SIGINT, handler);
+        printf ("interrupt to continue . . . \n");
+        pause();
+        printf ("waiting for second time interruption . . . \n");
+        pause();
+        printf("program ended.\n");
+        return 0;
+    }
+    ```
