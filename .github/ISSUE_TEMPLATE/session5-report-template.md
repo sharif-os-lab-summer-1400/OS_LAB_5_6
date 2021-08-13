@@ -7,13 +7,13 @@ assignees: mhaghighat20
 
 ---
 
-Team Name: `[FILL HERE]`
+Team Name: 97110285-97101286
 
-Student Name of member 1: `[FILL HERE]`
-Student No. of member 1: `[FILL HERE]`
+Student Name of member 1: Mohammadreza Abdi
+Student No. of member 1: 97110285
 
-Student Name of member 2: `[FILL HERE]`
-Student No. of member 2: `[FILL HERE]`
+Student Name of member 2: Alireza Ilami
+Student No. of member 2: 97101286
 
 - [x] Read Session Contents.
 
@@ -90,8 +90,9 @@ Student No. of member 2: `[FILL HERE]`
 - [x] Investigate how to have a bi-direction pipe
     - [x] `FILL HERE with your descriptions`
     
-    <div dir="ltr">
-     می توان از دو عدد 
+    <div dir="rtl">
+     
+    می توان از دو عدد 
     pipe
     میان پدر و فرزند بدین صورت استفاده کرد که اولین
     pipe
