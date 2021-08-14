@@ -36,7 +36,7 @@ Student No. of member 2: 97101286
 - [x]  Getting started with memory segments
     - [x] ![image](https://user-images.githubusercontent.com/45389577/128613170-83d6844f-3bc3-4c82-99d0-2af8e561886b.png)
     - [x] ![image](https://user-images.githubusercontent.com/45389577/128613184-bc2246c0-c655-46cc-9753-b0a3895623f2.png)
-    - [x] Heap and Stack are not shown. Because they are related to the runtime.
+    - [x] Heap and Stack are not shown. Because they are not constant. They are dynamic and related to the runtime.
     
 
 - [x] Getting started with memory sharing
@@ -47,7 +47,7 @@ Student No. of member 2: 97101286
 
 
 - [ ] Getting started with addresses
-    1. [ ] `[FILL HERE with your description about etext]`
+    1. [x] The address of etext symbol indicates the end of a program segment. In other words, This is the first address past the emd of the text segment (the program code). It is not defined in any header file. the program must declare it. Although this symbol has been provided on most UNIX systems, they are not standardized and should be used carefully.
     2. [ ] `[FILL HERE with your screenshots of given program analysis]`
     3. [ ] `[FILL HERE with your screenshots of sbrk analysis]`
     4. [ ] `[FILL HERE with your screenshots & code of heap growth analysis]`
