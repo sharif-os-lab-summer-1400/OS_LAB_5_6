@@ -48,7 +48,9 @@ Student No. of member 2: 97101286
 
 - [ ] Getting started with addresses
     1. [x] The address of etext symbol indicates the end of a program segment. In other words, This is the first address past the emd of the text segment (the program code). It is not defined in any header file. the program must declare it. Although this symbol has been provided on most UNIX systems, they are not standardized and should be used carefully.
-    2. [ ] ![image](https://user-images.githubusercontent.com/45389577/129449755-2e8ccf09-1138-4404-934a-0182b0e7b79d.png) \n Yes. The output format is exactly the same as what is shown in "man etext" example. \n
-    3. [ ] `[FILL HERE with your screenshots of sbrk analysis]`
-    4. [ ] `[FILL HERE with your screenshots & code of heap growth analysis]`
+    2. [x] ![image](https://user-images.githubusercontent.com/45389577/129449755-2e8ccf09-1138-4404-934a-0182b0e7b79d.png)  Yes. The output format is exactly the same as what is shown in "man etext" example. The addresses are increasingly growing.
+    3. [x] ![image](https://user-images.githubusercontent.com/45389577/129450878-36b6f7e1-07f0-4b1c-bc5e-fc01dcf9fefb.png) sbrk: Set the allocation break value . It is used to change the allocation for the calling process. And as it is shown, the heap end address is increased after the allocation.
+    4. [x] ![image](https://user-images.githubusercontent.com/45389577/129453365-99e892e9-38f9-4a41-9ecc-9bb5c8fd5052.png)
+           ![image](https://user-images.githubusercontent.com/45389577/129453396-39769b6c-aedf-4f23-b443-ee21c8d714ad.png)
+            As it is shown, the stack address it decreasing. (8 units per function call).
 
